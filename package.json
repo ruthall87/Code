@@ -1,0 +1,17 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "1. Initialize your app with a package.json using an npm command 2. Create a start command in your package.json with the contents \"nodemon app.js\" 3. Enter the following contents into a file and start your server with \"npm start\". HINT: **You might need to do    something before your app is able to run.** 4. Uncomment the line that begins with // app.use(express.someMiddleware()) and replace someMiddleware with a built-in    middleware function from express that parses incoming requests with JSON payloads and is based on body-parser 5. Increment the numRequests variable inside of numRequestsMiddleware before next() is called 6. GET \"/\" should respond with \"You visited the API numRequests times\" instead of \"Coding interview 3!\" (make sure an    integer is displayed for the count) 7. GET \"/cars\" should respond with the array of cars 8. POST \"/cars\" should add a car to the cars array with an id and respond with a 201 status code 9. POST \"/cars\" should not add cars that don't have both a \"name\" and a \"color\" property 10. GET \"/cars/:id\" should respond with the car of the id passed in or a 404 if the car was not found 11. Add additional functionality to GET \"/cars\" endpoint so that I can filter cars by color. For example GET     \"/cars?color=red\" should return all the cars which are red",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
